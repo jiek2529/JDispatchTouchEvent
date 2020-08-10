@@ -13,7 +13,10 @@ Activity .dispatchTouchEvent()
                 View.onTouchEvent();
                 View.onClick();//如果有
                 
-            dispatchTransformedTouchEvent 事件的分发与处理
+            ViewGroup.(private)dispatchTransformedTouchEvent 事件的分发与处理
+                事件的分发，与子控件的 Cancel
+                当前 ViewGroup 是否将事件分发给子 View
+                当前 ViewGroup 是否已经消费了当前事件
                 
 消费链以 ViewGroup 的 mFirstTarget 和 allReadyDispatchTouchEventTarget 标识来标记住
 
